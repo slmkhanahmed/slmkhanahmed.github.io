@@ -3,7 +3,7 @@ import { getFinalState } from './processQueue.js';
 function increment(n) {
   return n + 1;
 }
-increment.toString = () => 'n => n+1';  
+increment.toString = () => 'n => n+1';
 
 export default function App() {
   return (
