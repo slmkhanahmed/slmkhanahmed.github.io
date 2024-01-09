@@ -25,7 +25,7 @@ export default function Form() {
         />
       </label>
       <label>
-        Lase:
+        Lae:
         <input
           name="lastName"
           value={person.lastName}
