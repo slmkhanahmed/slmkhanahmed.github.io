@@ -19,13 +19,13 @@ export default function Form() {
       <label>
         First name:
         <input
-          name="fiName"
+          name="firstName"
           value={person.firstName}
           onChange={handleChange}
         />
       </label>
       <label>
-        Last name:
+        Last e:
         <input
           name="lastName"
           value={person.lastName}
