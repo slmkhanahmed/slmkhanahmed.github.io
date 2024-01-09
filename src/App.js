@@ -19,7 +19,7 @@ export default function Form() {
       <label>
         First name:
         <input
-          name="firstName"
+          name="fiName"
           value={person.firstName}
           onChange={handleChange}
         />
