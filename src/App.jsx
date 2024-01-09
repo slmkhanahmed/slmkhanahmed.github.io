@@ -1,5 +1,4 @@
 import { useState } from 'react';
-
 export default function Form() {
   const [person, setPerson] = useState({
     firstName: 'Barbara',
