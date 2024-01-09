@@ -25,7 +25,7 @@ export default function Form() {
         />
       </label>
       <label>
-        Last e:
+        Lase:
         <input
           name="lastName"
           value={person.lastName}
