@@ -1,4 +1,5 @@
-import {Navbar} from'./components';
+import React from "react";
+import Navbar from'./components/Navbar.jsx';
 const App = () => (
     <div>
      <Navbar />
