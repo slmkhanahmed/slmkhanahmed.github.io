@@ -1,45 +1,31 @@
-# Salman Ahmed Khan - Portfolio
+# Salman Ahmed Khan — Portfolio
 
-Welcome to my personal portfolio website. This project showcases my work, skills, and experience as a Front End Developer. It is built with a focus on performance, accessibility, and modern aesthetics.
+A responsive, accessible portfolio for Salman Ahmed Khan, a React-focused front-end developer. The site presents selected work, practical capabilities, education, and direct contact information in a lightweight one-page experience.
 
-## 🚀 Tech Stack
+## Highlights
 
-*   **React**: UI Library
-*   **Tailwind CSS**: Styling & Design System
-*   **Framer Motion**: Animations & Interactions
-*   **Three.js / Canvas**: Advanced Graphics (Starfield, 3D Tilt)
-*   **EmailJS**: Contact Form Functionality
+- Product-first case studies for Git Galaxy Finder and Product Feedback App
+- Responsive navigation and layouts from 320px through large desktops
+- Semantic landmarks, skip navigation, visible focus states, and reduced-motion support
+- Direct, reliable contact options with a copy-email interaction
+- Custom social preview, structured data, canonical metadata, sitemap, and valid web manifest
+- CSS-built product previews with no stock photography or continuously running canvas effects
 
-## ✨ Features
+## Local development
 
-*   **Immersive Hero Section**: 3D holographic tilt effect and dynamic text.
-*   **Interactive Command Palette**: Press `Ctrl+K` to navigate quickly.
-*   **Dynamic Background**: Custom starfield animation with parallax effects.
-*   **Glassmorphism Design**: Modern, frosted-glass UI elements.
-*   **Responsive Layout**: Fully optimized for all device sizes.
+```bash
+npm install
+npm start
+```
 
-## 🛠️ Installation & Run
+Create a production build with:
 
-1.  Clone the repository:
-    ```bash
-    git clone https://github.com/slmkhanahmed/slmkhanahmed.github.io.git
-    ```
-2.  Install dependencies:
-    ```bash
-    npm install
-    ```
-3.  Start the development server:
-    ```bash
-    npm start
-    ```
-4.  Build for production:
-    ```bash
-    npm run build
-    ```
+```bash
+npm run build
+```
 
-## 📬 Contact
+Run the smoke test with:
 
-Feel free to reach out via the contact form on the website or email me directly at [slmkhanahmed@gmail.com](mailto:slmkhanahmed@gmail.com).
-
----
-© 2025 Salman Ahmed Khan. All rights reserved.
+```bash
+npm test -- --watchAll=false --runInBand
+```

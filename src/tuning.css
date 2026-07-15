@@ -1,0 +1,70 @@
+/* Final viewport tuning kept separate from the main visual system for clarity. */
+@media (min-width: 1041px) {
+  .hero {
+    padding-top: clamp(7.75rem, 10vw, 9.25rem);
+  }
+
+  .hero-grid {
+    min-height: 570px;
+    grid-template-columns: minmax(0, 1.18fr) minmax(390px, 0.82fr);
+    gap: clamp(2.5rem, 5vw, 4.5rem);
+  }
+
+  .hero h1 {
+    font-size: clamp(3.2rem, 6.2vw, 5.5rem);
+  }
+}
+
+@media (min-width: 881px) and (max-width: 1040px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(340px, 0.78fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .section:not(.section--contact) {
+    padding-block: 5rem;
+  }
+
+  .section--contact {
+    padding: 2rem 0 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-visual {
+    display: none;
+  }
+
+  .focus-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .focus-strip > span {
+    min-width: 0;
+    border-right: 1px solid var(--line);
+  }
+
+  .focus-strip > span:nth-child(even) {
+    border-right: 0;
+  }
+
+  .focus-strip > span:nth-child(3) {
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 350px) {
+  .focus-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .focus-strip > span {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .focus-strip > span:nth-child(3) {
+    border-bottom: 1px solid var(--line);
+  }
+}
