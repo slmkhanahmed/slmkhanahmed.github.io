@@ -1,8 +1,16 @@
 {
   "short_name": "Salman Khan",
-  "name": "Salman Ahmed Khan — Front-End Developer",
-  "start_url": ".",
+  "name": "Salman Ahmed Khan - Front-End Developer",
+  "start_url": "/",
   "display": "standalone",
-  "theme_color": "#090c0a",
-  "background_color": "#090c0a"
+  "theme_color": "#3154ff",
+  "background_color": "#f2efe5",
+  "icons": [
+    {
+      "src": "salman-portrait.png",
+      "sizes": "410x410",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
 }
