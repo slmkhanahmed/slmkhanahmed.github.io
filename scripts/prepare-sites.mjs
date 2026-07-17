@@ -8,8 +8,10 @@ const output = resolve(root, "dist");
 
 await access(resolve(source, "index.html"));
 await rm(output, { recursive: true, force: true });
+await mkdir(resolve(output, ".openai"), { recursive: true });
 await mkdir(resolve(output, "server"), { recursive: true });
 await cp(source, resolve(output, "client"), { recursive: true });
+await copyFile(resolve(root, ".openai", "hosting.json"), resolve(output, ".openai", "hosting.json"));
 await copyFile(resolve(root, "worker", "sites-static.js"), resolve(output, "server", "index.js"));
 await copyFile(resolve(root, "worker", "package.json"), resolve(output, "server", "package.json"));
 

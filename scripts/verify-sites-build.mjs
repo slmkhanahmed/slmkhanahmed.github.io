@@ -31,6 +31,10 @@ const assets = {
   },
 };
 
+const hosting = JSON.parse(await readFile(resolve("dist", ".openai", "hosting.json"), "utf8"));
+assert.equal(typeof hosting.project_id, "string");
+assert.ok(hosting.project_id.length > 0);
+
 const home = await worker.fetch(
   new Request("https://portfolio.test/", { headers: { accept: "text/html" } }),
   { ASSETS: assets }
